@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_brace_in_string_interps, avoid_print, use_build_context_synchronously, non_constant_identifier_names, library_private_types_in_public_api
+// ignore_for_file: unnecessary_brace_in_string_interps, avoid_print, use_build_context_synchronously, non_constant_identifier_names, library_private_types_in_public_api, type_init_formals
 
 import 'package:chat_lipeo/screen/welcome/welcome_screen.dart';
 import 'package:http/http.dart' as http;

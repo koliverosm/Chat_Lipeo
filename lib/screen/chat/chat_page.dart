@@ -169,7 +169,7 @@ class _ChatPageState extends State<ChatPage> {
 ////////////////////////randomString()///////////////////////////////////////////////
   String randomString() {
     final random = Random.secure();
-    final values = List<int>.generate(16, (i) => random.nextInt(255));
+    final values = List<int>.generate(16, (i) => random.nextInt(500));
     return base64UrlEncode(values);
   }
 
@@ -294,6 +294,7 @@ class _ChatPageState extends State<ChatPage> {
 
 Future<void> mandarmensajes(
     String idconversacion, String idremitente, String message) async {
+  print('El ID DEL REMITENT ES: $idremitente');
   const String url =
       'https://api-chat-lipeo-7ed91d26c81f.herokuapp.com/usuarios/crear_message';
   print(

@@ -99,7 +99,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           ScaffoldMessenger.of(context).showSnackBar(snackBar);
           Timer(const Duration(seconds: 1), () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => LoginScreen()));
+                MaterialPageRoute(builder: (context) => const LoginScreen()));
           });
         } else {
           const snackBar = SnackBar(

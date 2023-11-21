@@ -84,14 +84,14 @@ class _ContactsPageState extends State<ContactsPage> {
         leading: IconButton(
           icon: Image.asset(
             'assets/icons/hogar.png',
-          ), // Cambia 'arrow_back' al icono que prefieras
+          ),
           onPressed: () {
             Navigator.push(
                 context,
                 MaterialPageRoute(
                     builder: (context) => LoginScreen(phone: phones)));
             const snackBar = SnackBar(
-              content: Text('Sesion Cerrada'),
+              content: Text('closed session'),
               duration: Duration(seconds: 2),
               backgroundColor: Color.fromARGB(255, 31, 92, 133),
               behavior: SnackBarBehavior.floating,
@@ -154,7 +154,6 @@ class _ContactsPageState extends State<ContactsPage> {
       backgroundColor: const Color(0xff427D9D),
       foregroundColor: Colors.white,
       onPressed: () {
-        // Muestra el modal para agregar un nuevo contacto
         showAddContactModal(context);
       },
       label: const Text('Enviar Nuevo Mensaje'),
@@ -162,9 +161,7 @@ class _ContactsPageState extends State<ContactsPage> {
     );
   }
 
-// Función para mostrar el modal de agregar contacto
   Future<dynamic> showAddContactModal(BuildContext context) async {
-    // Define controladores para los campos de texto
     final TextEditingController nameController = TextEditingController();
     final TextEditingController phoneController = TextEditingController();
 
